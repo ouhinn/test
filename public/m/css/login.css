@@ -1,0 +1,13 @@
+.loginBtn {
+    width: 92%;
+    background-color: #006699;
+    color: #fff;
+}
+.register-now{
+    display: block;
+    margin-top: 10px;
+    padding-right: 10px;
+    text-align: right;
+    font-size: 14px;
+    color: #006699;
+}

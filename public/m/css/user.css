@@ -1,0 +1,6 @@
+.mui-table-view > li {
+    font-size: 16px;
+}
+.mui-content>.mui-table-view:first-child {
+    margin-top: 0px;
+}

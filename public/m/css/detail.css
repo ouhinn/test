@@ -1,0 +1,87 @@
+.mui-slider img {
+    vertical-align: top;
+}
+.productTitle {
+    padding: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+}
+.productPrice {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+}
+.productPrice .now {
+    font-size: 24px;
+    color: #ea543d;
+}
+.productPrice .old {
+    color: #ccc;
+    text-decoration: line-through;
+    padding-left: 10px;
+}
+.productSize {
+    padding: 10px 10px 0 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+}
+.productSize span {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 28px;
+}
+.productNum {
+    padding: 10px;
+    font-size: 14px;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    line-height: 28px;
+}
+.productNum .numSelect {
+    margin-right: 12px;
+}
+.productNum .numSelect span {
+    float: left;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #ccc;
+    line-height: 28px;
+    text-align: center;
+}
+.active{
+    background-color: #fa672d;
+}
+.productNum .numSelect input {
+    float: left;
+    width: 28px;
+    height: 28px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+}
+.productBtn {
+    padding: 10px;
+    overflow: hidden;
+}
+.productBtn a,
+.productBtn span {
+    float: left;
+    height: 34px;
+    width: 50%;
+    line-height: 34px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.productBtn a {
+    background-color: #fa672d;
+}
+.productBtn span {
+    background-color: #991020;
+}

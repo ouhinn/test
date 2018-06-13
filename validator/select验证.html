@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+  <head>
+
+    <title>jQuery表单验证--检查select是否被选中</title>
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+    <!--
+
+    $(
+
+    function()
+
+    {
+
+         $('.error').hide();
+
+         $('.submit').click(
+
+             function(event)
+
+             {
+
+                 var val = $('select option:selected').val();
+
+                 if('' == val)
+
+                 {
+
+                     $('p.result').hide();
+
+                     $('.error').show();
+
+                 }
+
+                 else
+
+                 {
+
+                     $('.error').hide();
+
+                     $('p.result').show();
+
+                     $('p.result').text('您选择的体育项目是：' +
+
+                         $('select option:selected').html());
+
+                 }
+
+                 event.preventDefault();
+
+             }
+
+         );          
+
+    }
+
+    );
+
+    //-->
+
+    </script>
+
+    <style type="text/css">
+
+        .infobox{
+
+            width: 50px;
+
+        }
+
+        .error{
+
+            color: red;
+
+            padding-left: 10px;
+
+        }
+
+        .submit{
+
+            margin-left: 125px;
+
+            margin-top: 10px;
+
+        }
+
+    </style>
+
+  </head>
+
+  <body>
+
+  <form action="" method="post">
+
+    体育项目：
+
+    <select name="ball">
+
+        <option value="">请选择</option>
+
+        <option value="01">足球</option>
+
+        <option value="02">篮球</option>
+
+        <option value="03">排球</option>
+
+        <option value="04">棒球</option>
+
+        <option value="05">垒球</option>
+
+    </select>
+
+    <p class="error">请至少选中一个体育项目</p>
+
+    <p class="result"></p>
+
+    <input class="submit" type="submit" value="提 交" />
+
+  </form>
+
+  </body>
+
+</html>
